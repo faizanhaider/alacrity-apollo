@@ -27,7 +27,7 @@ const columns: ColDef[] = [
 ];
 
 const BooksList: React.FC<{}> = () => {
-  const { data, loading } = useQuery(GET_BOOKS, {
+  const { data, loading, error } = useQuery(GET_BOOKS, {
     fetchPolicy: "network-only",
   });
 
@@ -36,6 +36,9 @@ const BooksList: React.FC<{}> = () => {
 
   if (loading) {
     return <div>Loading...</div>;
+  }
+  if (error) {
+    return <div>Error! {error.message}</div>;
   }
 
   const bookList = (data.books as Book[]).reduce<Array<{ id: number } & Book>>(

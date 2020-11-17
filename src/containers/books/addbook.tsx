@@ -8,6 +8,7 @@ export default function AddBook() {
   const history = useHistory();
   const [createBookFn] = useMutation(CREATE_BOOK, {
     onCompleted: () => history.push("/books"),
+    onError: (error) => alert(`Failed to create book. ${error.message}`),
   });
 
   return (
