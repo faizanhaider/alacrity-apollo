@@ -1,7 +1,27 @@
-# Getting Started with Create React App
+# Getting Started with Alacrity Apollo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Also you need to run server for graphql as well. https://github.com/alacrity-law/apollo-test-app
+
+You can use `npm` as well as `yarn` but I'm listing yarn commands.
+
+First install all the dependencies `yarn install`
+
+In this project I'm using following technologies to best describe my technical skills
+  
+  - Typescript
+  - React Hooks, Apollo Client Hooks
+  - Material UI with style Hooks
+  - React Router to manage different routes.
+
+Code is organized in following folder
+
+  - Containers (Getting data to component)
+  - Components (React components nothing else)
+  - gql for GraphQl
+  - Models for describing types for models.
+  
 ## Available Scripts
 
 In the project directory, you can run:
