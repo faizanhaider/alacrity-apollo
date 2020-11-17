@@ -6,6 +6,8 @@ import { createHttpLink } from "apollo-link-http";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 import { ApolloLink } from "@apollo/client/core";
 
+import Routes from "./routes";
+
 const httpLink = createHttpLink({ uri: "http://localhost:4567/graphql" });
 
 const client = new ApolloClient({
@@ -16,7 +18,7 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <div></div>
+      <Routes />
     </ApolloProvider>
   );
 }
