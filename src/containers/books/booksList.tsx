@@ -32,6 +32,7 @@ const BooksList: React.FC<{}> = () => {
   });
 
   const [totalPrice, setTotalPrice] = useState(0);
+  const [toalSelectedBooks, setTotalSelectedBooks] = useState(0);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -51,10 +52,10 @@ const BooksList: React.FC<{}> = () => {
   return (
     <>
       <Button>
-        <Link to="/books/new">Create</Link>
+        <Link to="/books/new">Create New</Link>
       </Button>
       <Typography variant="h6">
-        Total Price for selected books: {totalPrice.toFixed(2)}
+        Total Price for {toalSelectedBooks} books: {totalPrice.toFixed(2)}
       </Typography>
       <div style={{ height: 400, width: "100%" }}>
         <DataGrid
@@ -62,9 +63,10 @@ const BooksList: React.FC<{}> = () => {
           columns={columns}
           pageSize={5}
           checkboxSelection
-          onSelectionChange={(newSelection) => {
+          onSelectionChange={({ rowIds }) => {
+            setTotalSelectedBooks(rowIds.length);
             setTotalPrice(
-              newSelection.rowIds.reduce<number>((acc, value) => {
+              rowIds.reduce<number>((acc, value) => {
                 acc += data.books.find(
                   (book: Book) => book.bookId === Number(value)
                 ).price;
