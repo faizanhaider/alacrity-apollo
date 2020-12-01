@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/alacrity-apollo/static/css/main.ab7136cd.chunk.css",
+    "main.js": "/alacrity-apollo/static/js/main.f253a06e.chunk.js",
+    "main.js.map": "/alacrity-apollo/static/js/main.f253a06e.chunk.js.map",
+    "runtime-main.js": "/alacrity-apollo/static/js/runtime-main.10a600e5.js",
+    "runtime-main.js.map": "/alacrity-apollo/static/js/runtime-main.10a600e5.js.map",
+    "static/js/2.85dca81d.chunk.js": "/alacrity-apollo/static/js/2.85dca81d.chunk.js",
+    "static/js/2.85dca81d.chunk.js.map": "/alacrity-apollo/static/js/2.85dca81d.chunk.js.map",
+    "static/js/3.5704cee1.chunk.js": "/alacrity-apollo/static/js/3.5704cee1.chunk.js",
+    "static/js/3.5704cee1.chunk.js.map": "/alacrity-apollo/static/js/3.5704cee1.chunk.js.map",
+    "index.html": "/alacrity-apollo/index.html",
+    "static/css/main.ab7136cd.chunk.css.map": "/alacrity-apollo/static/css/main.ab7136cd.chunk.css.map",
+    "static/js/2.85dca81d.chunk.js.LICENSE.txt": "/alacrity-apollo/static/js/2.85dca81d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10a600e5.js",
+    "static/js/2.85dca81d.chunk.js",
+    "static/css/main.ab7136cd.chunk.css",
+    "static/js/main.f253a06e.chunk.js"
+  ]
+}
